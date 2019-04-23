@@ -344,4 +344,4 @@ client.on("guildMemberAdd", member => {
   client.channels.find('id', '570032650471997490').send(` **Welcome To Inst Host Server**  `)
 }); 
 /////////
-client.login('NTcwMjYyNzY4MTg4NjUzNTgw.XL8o_w.xjMQyvNiJChVqQuscd6657nhNNw');
+client.login('NTcwMjYyNzY4MTg4NjUzNTgw.XL80Ow.UrN-JmxRlcp624HArgy0ud8gFhE');
