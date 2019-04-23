@@ -339,6 +339,44 @@ client.on('message', message => {
            
     }
 });
+
+ client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help") {
+
+
+ message.author.sendMessage(`
+ 
+
+ ╱╭╮╭╮╱╱╱╱╭╮╭━╮╱╱╱╱╱╱╭━━╮╱╱╱
+♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ 
+اوامر البوت
+❖اوامر عامه
+
+❖!link  لاخذ رابط اي بوت 
+❖!رابط لاخذ رابط السيرفر
+❖!invites لمعرفة كم دعوت شخص
+❖ !server  لمعرفت معلومات السيرفر
+❖!bans  يعطيك تاقات الي تبندو ورا بعض 
+❖!owner لترسل رسالة لصاحب البوت
+❖!مسح لمسح الشات 
+❖!اقتراح وكتب اقتراحك وسوف يصل الاداره
+❖!move لسحب جميع الاعضاء الذين في الرومات لعندك
+❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
+❖اوامر العاب 
+❖!زواج لعبة زواج
+❖!ابلع  لعبة حلوه
+
+
+
+
+`);
+
+message.channel.send('**تم الارسال في الخاص**');
+
+    }
+});
+
 //////
 client.on("guildMemberAdd", member => {
   client.channels.find('id', '570032650471997490').send(` **Welcome To Inst Host Server**  `)
