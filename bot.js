@@ -340,11 +340,14 @@ client.on('message', message => {
     }
 });
 
-client.on("message", (message) => {
+ client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help") {
 
-if (message.content === "$help") {
 
-    const embed = new Discord.RichEmbed()
+ message.author.sendMessage(`
+
+
 
       .setColor("RANDOM")
 
@@ -353,19 +356,16 @@ if (message.content === "$help") {
       .addField(`${prefix}new`, `لفتح تذكرة`)
 
       .addField(`${prefix}closs`, `لاغلاق التذكرة`)
-    
-
-  message.author.send({embed});
-
-}
-
+	  
+	  
+	  
+	  
 `);
 
 message.channel.send('**تم الارسال في الخاص**');
 
     }
 });
-
 
 //////
 client.on("guildMemberAdd", member => {
