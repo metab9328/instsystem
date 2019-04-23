@@ -340,35 +340,24 @@ client.on('message', message => {
     }
 });
 
- client.on('message', message => {
-    if (message.author.bot) return;
-     if (message.content === prefix + "help") {
+client.on("message", (message) => {
 
+if (message.content === "$help") {
 
- message.author.sendMessage(`
- 
+    const embed = new Discord.RichEmbed()
 
- ╱╭╮╭╮╱╱╱╱╭╮╭━╮╱╱╱╱╱╱╭━━╮╱╱╱
-♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ ♕ 
-اوامر البوت
-❖اوامر عامه
+      .setColor("RANDOM")
 
-❖!link  لاخذ رابط اي بوت 
-❖!رابط لاخذ رابط السيرفر
-❖!invites لمعرفة كم دعوت شخص
-❖ !server  لمعرفت معلومات السيرفر
-❖!bans  يعطيك تاقات الي تبندو ورا بعض 
-❖!owner لترسل رسالة لصاحب البوت
-❖!مسح لمسح الشات 
-❖!اقتراح وكتب اقتراحك وسوف يصل الاداره
-❖!move لسحب جميع الاعضاء الذين في الرومات لعندك
-❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
-❖اوامر العاب 
-❖!زواج لعبة زواج
-❖!ابلع  لعبة حلوه
+      .addField(`${prefix}invites`, `لرؤية عدد الاشخاص الذي ادخلتهم لديسكورد وتاريخ دخولك لديسكورد`)
 
+      .addField(`${prefix}new`, `لفتح تذكرة`)
 
+      .addField(`${prefix}closs`, `لاغلاق التذكرة`)
+    
 
+  message.author.send({embed});
+
+}
 
 `);
 
@@ -376,6 +365,7 @@ message.channel.send('**تم الارسال في الخاص**');
 
     }
 });
+
 
 //////
 client.on("guildMemberAdd", member => {
