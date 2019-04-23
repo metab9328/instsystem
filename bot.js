@@ -196,7 +196,7 @@ if(message.content.startsWith( prefix + 'invite')) {
             .setThumbnail(client.user.avatarURL)
             .addField('**الدعوات**', `**➥** [ شخص **${Number(inviteCount)}** ]`)
             .addField('**تم الانضمام للسيرفر من**', `**➥** [ يوم **${daysJoined.toFixed(0)}** ]`)
-            .addField('**رابط دعوة الانضمام**', `**➥** [ **https://discord.gg/${inviteCode || 'Zm2U6we'}** ]`)
+            .addField('**رابط دعوة الانضمام**', `**➥** [ **https://discord.gg/${inviteCode || 'AqFvJd2'}** ]`)
             .setColor('ORANGE')
             .setTimestamp()
             .setFooter(Tag, Avatar)
