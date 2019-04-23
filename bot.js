@@ -348,18 +348,13 @@ client.on('message', message => {
  message.author.sendMessage(`
 
 
+" ملاحظة البوت تحت التطوير - انست هوست "
+:cyclone: $invites - لاظهار عدد الاشخاص الي ادخلتهم الى السيرفر
+:cyclone: $new - لفتح تذكرة
+:cyclone: $close - لإغلاق التذكرة
 
-      .setColor("RANDOM")
 
-      .addField(`${prefix}invites`, `لرؤية عدد الاشخاص الذي ادخلتهم لديسكورد وتاريخ دخولك لديسكورد`)
 
-      .addField(`${prefix}new`, `لفتح تذكرة`)
-
-      .addField(`${prefix}closs`, `لاغلاق التذكرة`)
-	  
-	  
-	  
-	  
 `);
 
 message.channel.send('**تم الارسال في الخاص**');
