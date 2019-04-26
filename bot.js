@@ -389,7 +389,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('-');
     var guild;
     while (!guild)
-        guild = client.guilds.get("533131904342425620");
+        guild = client.guilds.get("570032650471997490");
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -403,4 +403,4 @@ client.on("guildMemberAdd", (member) => {
     });
 });
 /////////
-client.login('NTcwMjYyNzY4MTg4NjUzNTgw.XL9MrA.x98_aA_HfgGDlbX4qF3sEwH5huw');
+client.login('NTcwMjYyNzY4MTg4NjUzNTgw.XMMNcA.ysbk9jHT3ODrKLItobSwKpTGu8o');
